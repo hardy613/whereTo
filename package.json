@@ -1,0 +1,26 @@
+{
+  "name": "whereto",
+  "version": "1.0.0",
+  "description": "- typescript - express - axios - nodemon",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "axios": "^1.7.7",
+    "csvtojson": "^2.0.10",
+    "express": "^4.21.1",
+    "haversine": "^1.1.1",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
