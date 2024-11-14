@@ -10,7 +10,7 @@ export type Flight = {
 };
 
 export type Airport = {
-  field5: string; // iaca
+  field5: string; // icao
   field7: string; // lat
   field8: string; // lon
 };
