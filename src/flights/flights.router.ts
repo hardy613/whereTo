@@ -10,6 +10,6 @@ export class FlightsRouter {
   }
 
   forRoot() {
-    return this.router.get("/", this.flightsController.findByQuery());
+    return this.router.get("/", this.flightsController.getFlightsData());
   }
 }

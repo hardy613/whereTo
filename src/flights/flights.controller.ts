@@ -8,7 +8,7 @@ export class FlightsController {
     this.flightsService = new FlightsService();
   }
 
-  public findByQuery() {
+  public getFlightsData() {
     return async (
       {
         query: {
@@ -21,7 +21,7 @@ export class FlightsController {
       res: Response
     ) => {
       try {
-        const data = await this.flightsService.getFlightsData({
+        const data = await this.flightsService.findByQuery({
           carrier: carrier.length ? String(carrier) : undefined,
           maxHours: maxHours.length ? Number(maxHours) : undefined,
           acceptableDepartTimeMin: acceptableDepartTimeMin.length

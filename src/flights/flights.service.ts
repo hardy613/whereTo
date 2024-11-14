@@ -45,7 +45,7 @@ export class FlightsService {
     this.httpClient = axios.create();
   }
 
-  public async getFlightsData({
+  public async findByQuery({
     carrier,
     maxHours,
     acceptableDepartTimeMin,
